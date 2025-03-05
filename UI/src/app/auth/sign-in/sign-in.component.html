@@ -1,0 +1,57 @@
+<div class="container-fluid signin-bg d-flex justify-content-center align-items-center">
+    <div class="card text-center custom-card">
+      <div class="card-body">
+        <h1 class="pt-3 pb-3">Sign In</h1>
+        <form [formGroup]="loginForm" (ngSubmit)="submitForm()">
+          <div class="field-wrapper-inner mb-3">
+            <img class="auth-icon" src="../../../assets/bg-images/svg/auth-form/email.svg" alt="Email Icon">
+            <input 
+            type="text"
+            class="form-control"
+            formControlName="email"
+            autocomplete="off"
+            placeholder="Enter your email">
+            <p class="error-text" *ngIf="loginForm.get('email')?.hasError('required') && formSubmitted">
+              This field is required
+            </p>
+            <p class="error-text" *ngIf="loginForm.get('email')?.hasError('email')">
+              Email is incorrect
+            </p>
+          </div>
+          <div class="field-wrapper-inner mb-3">
+            <img class="auth-icon" src="../../../assets/bg-images/svg/auth-form/password.svg" alt="Password Icon">
+            <input 
+            type="text"
+            class="form-control"
+            autocomplete="off"
+            formControlName="password"
+            placeholder="Enter your password">
+            <p class="error-text" *ngIf="loginForm.get('password')?.hasError('required') && formSubmitted">
+              This field is required
+            </p>
+            <p class="error-text" *ngIf="loginForm.get('password')?.hasError('password')">
+              Password is incorrect
+            </p>
+          </div>
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <div class="form-check custom-checkbox">
+              <input 
+              type="checkbox"
+               class="form-check-input"
+                id="rememberMe"
+                >
+              <label class="form-check-label" for="rememberMe">Remember Me</label>
+            </div>
+            <a  class="text-decoration-none forgot-password" (click)="goToForget()" >Forgot Password?</a>
+          </div>
+          <div class="form-action">
+          <button type="submit" class="btn mb-3 w-100 btn-submit">Submit</button>
+          <h1 class="secondary-action">
+            Don't have an account? <a routerLink="/signUp" class="signUp-action">Sign Up</a>
+          </h1>
+        </div>
+        </form>
+
+      </div>
+    </div>
+  </div>

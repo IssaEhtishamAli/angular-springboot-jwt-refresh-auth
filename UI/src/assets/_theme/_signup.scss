@@ -1,0 +1,103 @@
+
+.profile-wrapper{
+    display: flex;
+    gap: 30px;
+    justify-content: start;
+    align-items: start;
+}
+.profile-title{
+    font-size: 20px;
+    font-family: "Lato";
+    font-weight: 400;
+    color:$primary_color !important;
+}
+.back-btn{
+    padding-right: 75px;
+    border: none;
+    width: 100px;
+    align-items: center;
+    background-color: transparent;
+}
+.password-validations {
+    flex-direction: column;
+    gap: 4px;
+    margin-top: 10px;
+    .validation {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 14px;
+    }
+    .correct {
+      color: var(--primary_color);
+      svg {
+        path,
+        circle {
+          fill: $primary_light;
+        }
+      }
+    }
+  }
+  .scroll-style-y {
+    max-height: 320px; /* Adjust the height as per your requirement */
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-right: 10px;
+  }
+.btn-submit{
+  background: #CE1F6A;
+  color: #fff;
+  &:hover{
+    background: #CE1F6A;
+    color: #fff;
+  }
+}
+
+
+.profile-wrapper-dp {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+  .picture {
+    position: relative;
+    img {
+      border: 1px solid grey;
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+    }
+    .dp-upload-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #fff;
+      border-radius: 50%;
+      filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.2));
+      width: 22px;
+      height: 22px;
+      position: absolute;
+      right: 8px;
+      bottom: 0;
+      cursor: pointer;
+      input[type="file"] {
+        display: none !important;
+      }
+      .content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      // &:hover {
+      //   // background-color: grey;
+      //   .content {
+      //     svg {
+      //       path {
+      //         fill: var(--primary_color);
+      //       }
+      //     }
+      //   }
+      // }
+    }
+  }
+}

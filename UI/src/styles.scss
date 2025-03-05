@@ -1,0 +1,76 @@
+/* You can add global styles to this file, and also import other style files */
+@import "../src/assets/_theme/variables";
+@import "../src/assets/_theme/signin";
+@import "../src/assets/_theme/signup";
+* {
+    font-family: "Lato";
+    color: #CE1F6A;
+    @font-face {
+      font-family: "Lato";
+      src: url(../src/assets/fonts/lato/Lato-Regular.ttf)
+        format("truetype");
+      font-weight: 400;
+    }
+    @font-face {
+      font-family: "Lato";
+      src: url(../src/assets/fonts/lato/Lato-Medium.ttf)
+        format("truetype");
+      font-weight: 500;
+    }
+    @font-face {
+      font-family: "Lato";
+      src: url(../src/assets/fonts/lato/Lato-SemiBold.ttf)
+        format("truetype");
+      font-weight: 600;
+    }
+    @font-face {
+      font-family: "Lato";
+      src: url(../src/assets/fonts/lato/Lato-Bold.ttf)
+        format("truetype");
+      font-weight: 700;
+    }
+    @font-face {
+      font-family: "SF-Pro";
+      src: url(../src/assets/fonts/sf_pro_display/SF-Pro-Display-Semibold.ttf)
+        format("truetype");
+      font-weight: 600;
+    }
+  }
+/* styles.css */
+.toast-info {
+  background-color: #17a2b8 !important; /* Optional: Change background color */
+  color: #ffffff !important; /* Change this to your desired color */
+}
+.toast-error .toast-message {
+  color: #ffffff !important; /* Change this to your desired color */
+}
+
+.toast-info .toast-message {
+  color: #ffffff !important; /* Change this to your desired color */
+}
+
+.toast-info .toast-title {
+  color: #ffffff !important; /* Change this to your desired color */
+}
+.custom-card{
+  width: 380px !important;
+  box-sizing: border-box !important;
+}
+input[type="text"] {
+  border: none;
+  border-radius: 0;
+  border-top: none ;
+  border-left: none ;
+  border-right: none;
+  border-bottom: 1px solid $primary_color;
+}
+.error-text {
+  display: flex;
+  font-family: "Lato";
+  font-weight: 400;
+  line-height: 8px;
+}
+.input-error {
+  border: 1px solid #d62934 !important;
+  color: #d62934 !important;
+}

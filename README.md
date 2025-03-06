@@ -8,15 +8,9 @@ User Registration & Login with JWT authentication
 
 Access & Refresh Token management
 
-Role-Based Authorization
-
-Spring Boot Security & Spring Data JPA
-
 Angular HTTP Interceptors for token handling
 
 Secure API Endpoints
-
-SweetAlert2 for alerts & loaders
 
 🖼️ Screenshots
 
@@ -71,46 +65,4 @@ cd angular-springboot-jwt-refresh-auth/frontend
 npm install
 
 # Start the Angular application
-ng serve --open
-
-📡 API Endpoints
-
-Method
-
-Endpoint
-
-Description
-
-POST
-
-/auth/register
-
-User Registration
-
-POST
-
-/auth/login
-
-User Login
-
-GET
-
-/users
-
-Get All Users
-
-POST
-
-/auth/refresh-token
-
-Generate New JWT
-
-🔑 Authentication Flow
-
-User registers an account.
-
-Logs in and receives JWT Access & Refresh Token.
-
-Secure APIs require the Access Token.
-
-If the access token expires, a new one is obtained using the Refresh Token.
+ng serve

@@ -48,11 +48,7 @@ Angular 18
 
 Bootstrap 5
 
-Angular Material UI
-
 RxJS & Interceptors
-
-SweetAlert2 for notifications
 
 🛠️ Installation
 

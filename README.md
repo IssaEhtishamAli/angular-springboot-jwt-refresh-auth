@@ -1,68 +1,72 @@
 Angular + Spring Boot JWT Authentication with Refresh Token
+A robust full-stack authentication system built with Angular and Spring Boot, leveraging JWT authentication with refresh tokens for secure user access management. The backend (Spring Boot) provides protected REST APIs, while the frontend (Angular) ensures a seamless user authentication and authorization experience.
 
-A full-stack authentication system using Angular and Spring Boot, implementing JWT authentication with refresh tokens. The backend (Spring Boot) provides secure REST APIs, and the frontend (Angular) consumes those APIs for user authentication and authorization.
-
-🚀 Features
-
-User Registration & Login with JWT authentication
-
-Access & Refresh Token management
-
-Angular HTTP Interceptors for token handling
-
-Secure API Endpoints
+🚀 Key Features
+* User Registration & Login with JWT authentication
+* Access & Refresh Token Management for seamless session handling
+* Angular HTTP Interceptors for automated token processing
+* Secure API Endpoints with Spring Security
 
 🖼️ Screenshots
 
 🔹 Sign-Up Page
 ![Image](https://github.com/user-attachments/assets/ef9cff89-1227-4706-bbb8-ee9a8b0aa4a5)
 
-
 🔹 Home Page (Users List)
 
 ![Image](https://github.com/user-attachments/assets/e5a705ae-4279-450d-a8d9-1e71bc158370)
 
-🏗️ Tech Stack
+🔹 User Table (Database View)
 
-🔹 Backend (Spring Boot)
+![Image](https://github.com/user-attachments/assets/2a2d4e8b-26be-4456-832b-376a4873ec95)
+## 🏗️ Tech Stack  
 
-Spring Boot 3.2.5
+### 🔹 Backend (Spring Boot)  
+* **Spring Boot 3.2.5**  
+* **Spring Security & JWT** for authentication  
+* **JDBC Template (PostgreSQL)** for database operations  
+* **Java 21** for backend development  
+* **Lombok** for cleaner and more efficient code  
 
-Spring Security & JWT
+### 🔹 Frontend (Angular)  
+* **Angular 17** for a dynamic and interactive UI  
+* **Bootstrap 5** for responsive design  
+* **RxJS & HTTP Interceptors** for efficient API communication  
 
-Jdbctemplate (PostgreSQL)
+---
 
-Java 21
+## 🛠️ Installation Guide  
 
-Lombok
+### 🔹 Backend (Spring Boot)  
+* **Clone the repository**  
+  ```bash
+  git clone https://github.com/IssaEhtishamAli/angular-springboot-jwt-refresh-auth.git
 
-🔹 Frontend (Angular)
+* **Frontend (Angular)**
+  * Angular 18 for a dynamic and interactive UI
+  * Bootstrap 5 for responsive design
+  * RxJS & HTTP Interceptors for efficient API communication
 
-Angular 18
+* **Install required software**
+  * IntelliJ IDEA Community Edition v2024.3.3
+  * Java JDK v21
+  * PostgreSQL v17.4
+  * pgAdmin v9.1
 
-Bootstrap 5
+* **Frontend (Angular)**
+  * Install Node.js v23
+  * Install Angular CLI
+  ```bash
+    npm install -g @angular/cli@17.1.0
 
-RxJS & Interceptors
+*  **Install dependencies**
+  ```bash
+    npm install
 
-🛠️ Installation
+  * Run Application
+    ng serve
 
-🔹 Backend (Spring Boot)
 
-# Clone the repository
-git clone https://github.com/IssaEhtishamAli/angular-springboot-jwt-refresh-auth.git
-cd angular-springboot-jwt-refresh-auth/backend
 
-# Configure PostgreSQL database in application.properties
 
-# Run the Spring Boot application
-mvn spring-boot:run
 
-🔹 Frontend (Angular)
-
-cd angular-springboot-jwt-refresh-auth/frontend
-
-# Install dependencies
-npm install
-
-# Start the Angular application
-ng serve

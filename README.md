@@ -37,17 +37,11 @@ A robust full-stack authentication system built with Angular and Spring Boot, le
 
 ## 🛠️ Installation Guide  
 
-### 🔹 Backend (Spring Boot)  
 * **Clone the repository**  
   ```bash
   git clone https://github.com/IssaEhtishamAli/angular-springboot-jwt-refresh-auth.git
 
-* **Frontend (Angular)**
-  * Angular 18 for a dynamic and interactive UI
-  * Bootstrap 5 for responsive design
-  * RxJS & HTTP Interceptors for efficient API communication
-
-* **Install required software**
+* **Required Software**
   * IntelliJ IDEA Community Edition v2024.3.3
   * Java JDK v21
   * PostgreSQL v17.4
@@ -55,6 +49,8 @@ A robust full-stack authentication system built with Angular and Spring Boot, le
 
 * **Frontend (Angular)**
   * Install Node.js v23
+    https://nodejs.org/en
+
   * Install Angular CLI
   ```bash
     npm install -g @angular/cli@17.1.0
@@ -62,8 +58,9 @@ A robust full-stack authentication system built with Angular and Spring Boot, le
 *  **Install dependencies**
   ```bash
     npm install
-
-  * Run Application
+  ```
+*  **Run Application**
+  ```bash
     ng serve
 
 

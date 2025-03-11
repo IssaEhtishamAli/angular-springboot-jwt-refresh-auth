@@ -10,11 +10,11 @@ A robust full-stack authentication system built with Angular and Spring Boot, le
 🖼️ Screenshots
 
 🔹 Sign-Up Page
-![Image](https://github.com/user-attachments/assets/ef9cff89-1227-4706-bbb8-ee9a8b0aa4a5)
+![Image](https://github.com/user-attachments/assets/3dd62220-a6ba-4b32-98c4-4b4f3e2fb8be)
 
 🔹 Home Page (Users List)
 
-![Image](https://github.com/user-attachments/assets/e5a705ae-4279-450d-a8d9-1e71bc158370)
+![Image](https://github.com/user-attachments/assets/d9f3fee7-a8e6-42fb-b20a-d46db996168a)
 
 🔹 User Table (Database View)
 
